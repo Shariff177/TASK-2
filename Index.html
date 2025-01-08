@@ -1,24 +1,70 @@
 <html>
     <head>
         <title>TASK-2</title>
+        <style>
+            body {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            .row {
+                display: flex;
+                width: 100%;
+            }
+            .row1 {
+                height: 22%;
+            }
+            .row2 {
+                height: 6%;
+            }
+            .row3 {
+                flex: 1;
+            }
+            .col {
+                flex: 1;
+            }
+            .col1 {
+                flex: 0 0 21%;
+            }
+            .col2 {
+                flex: 0 0 25%;
+            }
+        </style>
     </head>
-    <frameset rows="22%,6%,*">
-        <frameset cols="21%,*">
-            <frame name="f1" src="image.html">
-            <frame name="f2" src="Title.html">
-        </frameset>
-
-        <frameset cols="20%,20%,20%,20%,20%">
-            <frame name="f3" src="username.html">
-            <frame name="f4" src="movie.html">
-            <frame name="f5" src="Big 4.html">
-            <frame name="f6" src="anime series.html">
-            <frame name="f7" src="Manga reading.html">
-        </frameset>
-
-        <frameset cols="25%,*">
-            <frame name="f8" src="login.html">
-            <frame name="f9" src="info.html">
-        </frameset>
-    </frameset>
+    <body>
+        <div class="row row1">
+            <div class="col col1">
+                <iframe src="image.html" name="f1" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="Title.html" name="f2" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col">
+                <iframe src="username.html" name="f3" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="movie.html" name="f4" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="Big 4.html" name="f5" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="anime series.html" name="f6" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="Manga reading.html" name="f7" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="col col2">
+                <iframe src="login.html" name="f8" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+            <div class="col">
+                <iframe src="info.html" name="f9" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+    </body>
 </html>
